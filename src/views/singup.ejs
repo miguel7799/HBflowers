@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sing Up</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+        crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a href="/" class="navbar-brand">Registro de Usuario
+            </a>
+        </nav>
+
+        <div class = "container">
+            <div class = "row ">
+                <!--Form-->
+                <div class = "col-md-">
+                    <div class = "card-body">
+                        <form action="/adduser" method="POST">
+                            <div class = "form-goup">
+                                <input type="text" name= "nombre" placeholder="Nombre(s)" class= "form-control">
+
+                            </div>
+                            <div class = "form-goup">
+                                <input type="text" name= "apellido" placeholder="Apellido(s)" class= "form-control">
+
+                            </div>
+                            <div class = "form-goup">
+                                <input type="text" name= "sexo" placeholder="Masculino o Femenino" class= "form-control">
+                            </div>
+                            <div class = "form-goup">
+                                <textarea name= "direccion" cols="80" class="form-control" placeholder="Direccion (calle, numero, col y del)"></textarea> 
+
+                            </div>
+                            <div class = "form-goup">
+                                <input type="tel" name= "cel" placeholder="Número telefonico" class= "form-control">
+                            </div>
+                            <div class = "form-goup">
+                                <input type="email" name= "correo" placeholder="E-mail" class= "form-control">
+
+                            </div>
+                            <div class = "form-goup">
+                                <input type="password" name= "contrasena" placeholder="Contraseña" class= "form-control">
+
+                            </div>
+                            <button type="submit" class="btn btn-primary">  
+                                Registrarse
+
+                            </button>
+                        </form>
+                        <button type="submit" class="btn btn-primary">  
+                            Login
+
+                        </button>
+                    </div>
+                </div>
+                <!--List-->
+                
+        </div>
+    </body>
+</html> 

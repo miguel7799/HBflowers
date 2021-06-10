@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Edicion </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+        crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a href="/" class="navbar-brand">Edicion
+            </a>
+        </nav>
+         <div class="container">
+             <div class="row">
+            
+            <div class = "container">
+                <div class = "row">
+                    <!--Form--><div class = "col-md-5">
+                    <div class = "card-body">
+                        <form action="/edit/<%= flor._id %>" method="POST">
+                
+                            <div class = "form-goup">
+                                <input type="text" name= "nombre" placeholder="Inserta Nombre" class= "form-control" value="<%= flor.nombre %>" >
+
+                            </div>
+                            <div class = "form-goup">
+                                <input type="text" name= "imagen" placeholder="Insertaurl de imagen" class= "form-control" value="<%= flor.imagen%>">
+
+                            </div>
+                            <div class = "form-goup">
+                                <textarea name= "descripcion" cols="80" class="form-control" placeholder="Inserta 
+                                descripcion"><%= flor.descripcion%>
+                                </textarea> 
+                            </div>
+                            <div class = "form-goup">
+                                <input type="text" name= "disponibilidad" placeholder="Inserta Disponibilidad" class= "form-control"value="<%= flor.disponibilidad %>">
+
+                            </div>
+                            <div class = "form-goup">
+                                <input type="text" name= "precio" placeholder="Inserta Precio" class= "form-control" value="<%= flor.precio %>">
+
+                            </div>
+                            <button type="submit" class="btn btn-primary">  
+                                Update
+    
+                            </button>
+                        </form>
+                    </div>
+                </div>
+             </div>
+         </div>   
+        </body>
+        </html>
